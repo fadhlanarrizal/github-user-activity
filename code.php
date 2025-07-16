@@ -2,7 +2,7 @@
 
 $ch = curl_init();
 $token = "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";
-$user = "fadhlanarrizal";
+$user = $argv[1];
 
 curl_setopt_array($ch, [
     CURLOPT_URL => "https://api.github.com/users/$user/events",
